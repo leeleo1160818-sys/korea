@@ -11,7 +11,7 @@ header {
   position: absolute;
   width: 100%;
   z-index: 1000;
-  background: rgba(116, 113, 113, 0.7);
+  background: rgba(224, 214, 214, 0.637);
 }
 
 .header-top {
@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   gap: 120px;
   font-size: 20px;
-  color: #242323;
+  color: #222222;
 }
 
 .logo {
