@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한국의 빛</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- jquery -->
+  <script src="js/jquery-4.0.0.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-top">
+          <h1 class="logo"><img src="img/logo1.png" alt="홈으로"></h1>
+          <ul class="gnb">
+            <li><a href="">한국소개</a></li>
+            <li><a href="">한국의 유산</a></li>
+            <li><a href="">대표음식</a></li>
+            <li><a href="">전통문화</a></li>
+            <li><a href="">K-Culture</a></li>
+          </ul>
+
+          <div class="util">
+            <select name="언어" id="">
+              KOREA
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 -->
+    <section id="main-visual">
+      <div class="main-mov">
+        <video muted autoplay loop>
+          <source src="img/mainbg.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- main -->
+    <main>
+      <section id="korea-now">
+        <div class="inner">
+          <h2>Korea, Right Now</h2>
+          <p class="text">지금 대한민국의 문화와 트렌드를 소개합니다.</p>
+
+          <!-- 스와이퍼 -->
+          <div class="swiper mySwiper now">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/now-kdh.jpg">
+                  </div>
+                  <h3>KPop Demon Hunters</h3>
+                  <p>K-POP과 판타지가 결합된 애니메이션.<br>
+                    한국적 세계관을 글로벌 무대로 확장합니다.</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/now-bts.png">
+                  </div>
+                  <h3>BTS</h3>
+                  <p>음악과 메시지로 전 세계와 연결된 아티스트.<br>
+                    한국 대중문화의 영향력을 상징합니다.</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/now-K-Food.png">
+                  </div>
+                  <h3>K-Food</h3>
+                  <p>전통과 현대가 어우러진 다채로운 맛.<br>
+                    한국의 식문화가 세계인의 일상으로 이어집니다.</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/now-han.png">
+                  </div>
+                  <h3>한복</h3>
+                  <p>한복은 한국의 전통 의상으로 <br>
+                    곡선미와 여유로운 실루엣이 특징입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+        </div>
+      </section>
+      <section id="culture">
+        <div class="inner">
+          <h2>culture</h2>
+          <p class="text">대한민국의 자랑스런 문화를 소개합니다.</p>
+          <ul>
+            <li>
+              <a href="">
+                <img src="img/hanbok.jpg" alt="">
+                <span>한복</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="img/squid.jpg" alt="">
+                <span>오징어게임</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="img/bibimbap.jpg" alt="">
+                <span>비빔밥</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="img/samul.jpg" alt="">
+                <span>사물놀이</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="treasures">
+        <div class="inner">
+          <h2>Treasures of Korea</h2>
+          <p class="text">대한민국를 대표하는 소중한 문화유산을 소개합니다.</p>
+
+          <div class="gallery">
+            <div class="main">
+              <div class="main-img">
+                <img id="mainImg" src="img/thumb01.png">
+              </div>
+              <div class="info">
+                <h2 id="title">흥인지문</h2>
+                <p id="desc">
+                  흥인지문은 조선시대 한양 도성의 동쪽 대문으로 동대문이라고도 불립니다.
+                  조선 태조 때 처음 세워졌으며 서울을 대표하는 문화유산 중 하나입니다.
+                  현재는 서울의 상징적인 역사 유적지로 많은 관광객이 방문합니다.
+                </p>
+              </div>
+            </div>
+            <div class="thumbs">
+              <div class="thumb">
+                <img src="img/thumb02.png">
+                <span>보신각</span>
+                <div class="data">
+                  <h3>보신각</h3>
+                  <p>
+                    보신각은 조선시대에 시간을 알리기 위해 종을 치던 장소입니다.
+                    매일 새벽과 저녁에 종을 울려 도성의 문을 열고 닫는 시간을 알렸습니다.
+                    현재는 서울 종로에 위치한 역사적인 문화유산입니다.
+                    매년 새해가 되면 보신각에서 제야의 종 행사가 열립니다.
+                  </p>
+                </div>
+              </div>
+              <div class="thumb">
+                <img src="img/thumb03.png">
+                <span>경복궁</span>
+                <div class="data">
+                  <h3>경복궁</h3>
+                  <p>
+                    경복궁은 조선 왕조의 법궁으로 1395년에 건립되었습니다.
+                    조선의 궁궐 가운데 가장 규모가 크고 중심이 되는 궁궐입니다.
+                    근정전과 경회루 등 아름다운 전각이 남아 있습니다.
+                    현재는 한국을 대표하는 역사 관광지입니다.
+                  </p>
+                </div>
+              </div>
+              <div class="thumb">
+                <img src="img/thumb04.png">
+                <span>훈민정음</span>
+                <div class="data">
+                  <h3>훈민정음</h3>
+                  <p>
+                    훈민정음은 세종대왕이 백성을 위해 만든 문자 체계입니다.
+                    1443년에 창제되고 1446년에 반포되었습니다.
+                    한글의 창제 원리와 사용 방법이 기록된 책입니다.
+                    현재 유네스코 세계기록유산으로 등재되어 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explore">
+        <div class="inner">
+          <h2>마을에서 만나는 진짜 제주</h2>
+          <p>13개 마을 이야기</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper exploreview">
+          <!--  <div class="icon">
+        <img src="img/icon_illust_1.png" alt="">
+      </div> -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="">
+                  <figure><img src="img/village1.png" alt=""></figure>
+                  <h3>의귀리</h3>
+                  <p>의귀리는 기후가 온화한 감귤주산지로 말과 관련된<br> 다양한 체험도 할 수 있어요</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="">
+                  <figure><img src="img/village2.png" alt=""></figure>
+                  <h3>수산리</h3>
+                  <p>제주도 최대 저수지인 수산저수지와 마을의 수호목<br>곰솔(천연기념물)이 있는 유서 깊은 마을입니다.</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="">
+                  <figure><img src="img/village3.png" alt=""></figure>
+                  <h3>교래리</h3>
+                  <p>돌문화공원, 교래곶자왈, 삼다수 숲길, 에코랜드,<br>바늘오름 등 볼거리가 가득한 마을, 교래리입니다.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="">
+                  <figure><img src="img/village4.png" alt=""></figure>
+                  <h3>한남리</h3>
+                  <p>사려니오름과 머체왓숲길을 걷고, 아름다운 풍경에서<br>피크닉도 즐겨보세요.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="inner">
+        <h2>Footer</h2>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 마우스커서 -->
+  <div class="cursor-light"></div>
+
+  <div class="trail"></div>
+  <div class="trail"></div>
+  <div class="trail"></div>
+  <div class="trail"></div>
+  <div class="trail"></div>
+  <div class="trail"></div>
+  <div class="trail"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
