@@ -1,17 +1,96 @@
 @charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
 
-
-
+/* 공통 */
 .inner {
   width: 1440px;
   margin: 0 auto;
 }
-/* --------------------------------------------------------------- */
+
+body {
+  padding-top:100px;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.light{
+  background:#f7f7f5;
+  color:#222;
+}
+
+body.dark{
+  background:#1c1c1c;
+  color:#fff;
+}
+
+body.mix{
+  background:#CB0404;
+   color:#081cd3;
+   background:#081cd3;
+   color:#CB0404;
+}
+
+.util {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* 컬러버튼 */
+.color{
+  display:flex;
+  gap:8px;
+}
+
+.color button{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  border:1px solid #333;
+  cursor:pointer;
+  padding:0;
+}
+
+/* white */
+
+.color button[data-theme="light"]{
+  background:#f7f7f5;
+}
+
+/* black */
+
+.color button[data-theme="dark"]{
+  background:#1c1c1c;
+}
+
+/* mix */
+
+.color button[data-theme="mix"]{
+  background:linear-gradient(90deg,#CB0404 50%,#081cd3 50%);
+}
+
+
+/* body.light header {
+  background: #ffffff;
+}
+
+body.dark header {
+  background: #111;
+}
+
+body.mix header {
+  background: linear-gradient(135deg, #ffffff, #222);
+} */
+
+/* 헤더 */
 header {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100px;
   z-index: 1000;
-  background: rgba(224, 214, 214, 0.637);
+  background: rgb(224, 214, 214);
 }
 
 .header-top {
@@ -37,93 +116,140 @@ header {
   width: 100%;
 }
 
-#main-visual{
-  position:relative;
-  height:100vh;
-  overflow:hidden;
+.lang {
+  position: relative;
+  color: #000;
 }
 
-.main-mov{
-  width:100%;
-  height:100%;
+.lang.active {
+   color: #000000;
 }
 
-.main-mov video{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.lang.active>a i {
+  transform: rotate(180deg);
 }
+
+.lang ul {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 47.4px;
+  left: 0;
+  /*  background: #000; */
+  color: #ccc;
+  text-align: center;
+  z-index: 200;
+}
+
+.lang ul li {
+  padding: 10px;
+}
+
+.lang ul li:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+#main-visual {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-mov {
+  width: 100%;
+  height: 100%;
+}
+
+.main-mov video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* now */
-.now{
-  padding:0 50px;
-  position:relative;
-}
-.card{
-  position:relative;
-  width:100%;
+.now {
+  padding: 0 50px;
+  position: relative;
 }
 
-.card-img{
-  width:100%;
-  height:220px;
-  overflow:hidden;
+.card {
+  position: relative;
+  width: 100%;
 }
 
-.card-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+.card-img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .now .swiper-button-next,
-.now .swiper-button-prev{
-  color:#000;
+.now .swiper-button-prev {
+  color: #000;
 }
 
 /* culture */
-#culture ul{
-  display:grid;
-  grid-template-columns:1fr 1fr;
+#culture ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#culture li{
-  height:300px;
+#culture li {
+  height: 300px;
 }
 
-#culture li a{
-  display:block;
-  width:100%;
-  height:100%;
-  position:relative;
-  overflow:hidden;
+#culture li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-#culture li img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+#culture li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 텍스트 가운데 */
-#culture li span{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  font-size:28px;
-  font-weight:bold;
-  color:#000;
+#culture li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
 }
 
 /* 예시 배경 (이미지 없을 때 테스트용) */
-#culture li:nth-child(1){background:#e9e5e4;}
-#culture li:nth-child(2){background:#d8cfcf;}
-#culture li:nth-child(3){background:#cfd8dd;}
-#culture li:nth-child(4){background:#ddd8d8;}
+#culture li:nth-child(1) {
+  background: #e9e5e4;
+}
+
+#culture li:nth-child(2) {
+  background: #d8cfcf;
+}
+
+#culture li:nth-child(3) {
+  background: #cfd8dd;
+}
+
+#culture li:nth-child(4) {
+  background: #ddd8d8;
+}
 
 /* 갤러리*/
 .main {
@@ -141,8 +267,8 @@ header {
   object-fit: cover;
 }
 
-.data{
-  display:none;
+.data {
+  display: none;
 }
 
 .info {
@@ -180,6 +306,7 @@ header {
 .exploreview {
   padding: 0 100px;
 }
+
 /* footer */
 footer {
   height: 300px;

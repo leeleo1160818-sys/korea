@@ -21,13 +21,30 @@ window.addEventListener("mousemove", e => {
   });
 });
 
+/* 테마변경 */
+$(".color button").click(function () {
+
+  let theme = $(this).data("theme")
+
+  $("body").removeClass("light dark mix")
+  $("body").addClass(theme)
+
+})
+
+/* 언어 선택 */
+$(".lang").on("click", function (e) {
+  e.preventDefault(); 
+  $(".lang-list").slideToggle(250);
+  $(this).toggleClass("active");
+});
+
 /* now 슬라이드 */
 var nowSwiper = new Swiper(".swiper.now", {
   slidesPerView: 3,
   spaceBetween: 80,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 10000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -37,8 +54,7 @@ var nowSwiper = new Swiper(".swiper.now", {
 });
 
 /* 갤러리 */
-$(".thumb").click(function(){
-
+$(".thumb").click(function () {
   const img = $(this).find("img").attr("src");
   const title = $(this).find("h3").text();
   const desc = $(this).find("p").text();
@@ -46,7 +62,6 @@ $(".thumb").click(function(){
   $("#mainImg").attr("src", img);
   $("#title").text(title);
   $("#desc").text(desc);
-
 });
 
 /* explore 슬라이드 */
@@ -58,8 +73,7 @@ var swiper = new Swiper(".exploreview", {
   loop: true,
 
   autoplay: {
-    delay: 2000,
+    delay: 5000,
     disableOnInteraction: false,
   },
-
 });
