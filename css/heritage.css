@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
+
+
+/* header */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+
+/* heritage section */
+
+#heritage {
+  padding: 100px 0;
+}
+
+#heritage h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* 검색 */
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.search button {
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 탭 */
+
+.tab {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.tab li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+}
+
+.tab li.on {
+  background: #000;
+  color: #fff;
+}
+
+/* grid */
+
+.grid{
+  width:100%;
+}
+
+.item{
+  width:25%;
+  padding:15px;
+  box-sizing:border-box;
+}
+
+.item img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+/* 카드 */
+
+.item .card{
+  border:1px solid #ddd;
+  background:#fff;
+  padding:10px;
+  transition:.2s;
+}
+
+.item .card:hover{
+  transform:translateY(-5px);
+}
+
+.item h3{
+  margin-top:10px;
+  font-size:18px;
+}
+
+.item p{
+  font-size:14px;
+  color:#666;
+}
+
+/* 애니메이션 */
+.effect-2 .item {
+  opacity:0;
+  transform:scale(0.8);
+}
+
+.effect-2 .item.animate{
+  opacity:1;
+  transform:scale(1);
+  transition:0.5s;
+}
+/* pagination */
+
+.paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 60px;
+}
+
+.paging button {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page-list {
+  display: flex;
+  gap: 8px;
+}
+
+.page-list li {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.page-list li.on {
+  background: #000;
+  color: #fff;
+}

@@ -14,7 +14,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/food-index.css" />
+  <link rel="stylesheet" href="css/food-detail.css" />
   <link rel="stylesheet" href="css/common.css" />
   <!-- jquery -->
   <script src="js/jquery-4.0.0.js"></script>
@@ -31,12 +31,10 @@
     <header>
       <div class="inner">
         <div class="header-top">
-          <h1 class="logo">
-            <a href="index.html"><img src="img/logo1.png" alt="홈으로" /></a>
-          </h1>
+          <h1 class="logo"><img src="img/logo1.png" alt="홈으로" /></h1>
           <ul class="gnb">
             <li><a href="">한국소개</a></li>
-            <li><a href="heritage-index.html">한국의 유산</a></li>
+            <li><a href="heritage-detail.html">한국의 유산</a></li>
             <li><a href="food-index.html">대표음식</a></li>
             <li><a href="">전통문화</a></li>
             <li><a href="">K-Culture</a></li>
@@ -61,30 +59,49 @@
       </div>
     </header>
     <!-- 헤더 -->
-    <section id="food">
+    <section id="food-detail">
       <div class="inner">
-        <h2>대표 음식</h2>
+        <div class="detail-grid">
+          <div class="detail-img">
+            <img id="foodImage" />
+          </div>
 
-        <!-- 검색 -->
-        <div class="search-box">
-          <input type="text" id="searchInput" placeholder="음식명을 입력하세요" />
-        </div>
+          <div>
+            <h2 class="detail-title" id="foodName"></h2>
 
-        <!-- 탭 -->
-        <ul class="tab">
-          <li data-filter="all" class="on">전체</li>
-          <li data-filter="궁중음식">궁중음식</li>
-          <li data-filter="K-BBQ">K-BBQ</li>
-          <li data-filter="소울푸드">소울푸드</li>
-          <li data-filter="길거리음식">길거리음식</li>
-          <li data-filter="전통주">전통주</li>
-        </ul>
+            <p class="detail-tagline" id="foodTagline"></p>
 
-        <!-- 리스트 -->
-        <div class="food-list"></div>
+            <div class="info-grid">
+              <div class="info-box">
+                <h3>음식 소개</h3>
+                <p id="foodIntro"></p>
+              </div>
 
-        <div class="btn-area">
-          <button class="more-btn">더보기</button>
+              <div class="info-box">
+                <h3>이야기와 역사</h3>
+                <p id="foodHistory"></p>
+              </div>
+
+              <div class="info-box">
+                <h3>주요 재료</h3>
+                <ul id="ingredientList"></ul>
+              </div>
+
+              <div class="info-box">
+                <h3>관련 지역 / 문화</h3>
+                <ul id="regionList"></ul>
+              </div>
+
+              <div class="info-box">
+                <h3>곁들이는 음식</h3>
+                <ul id="pairingList"></ul>
+              </div>
+
+              <div class="btn-area">
+                <button class="return">목록으로 가기</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -106,7 +123,7 @@
   <div class="trail"></div>
   <div class="trail"></div>
 
-  <script src="js/food-script.js"></script>
+  <script src="js/food-detail.js"></script>
 </body>
 
 </html>

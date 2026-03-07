@@ -15,7 +15,7 @@ function renderAll(data) {
     html += `
       <div class="food-card ${food.category}">
         <div class="card-inner">
-          <a href="detail-food.html?id=${food.id}">
+          <a href="food-detail.html?id=${food.id}">
             <img src="${food.list_image_url}" alt="${food.name}" />
             <div class="info">
               <h3>${food.name}</h3>
@@ -92,4 +92,22 @@ $("#searchInput").on("keyup", function () {
   } else {
     update(); // 검색어 지우면 다시 원래 탭/개수 상태로 복구
   }
+});
+
+
+/* 테마변경 */
+$(".color button").click(function () {
+
+  let theme = $(this).data("theme")
+
+  $("body").removeClass("light dark mix")
+  $("body").addClass(theme)
+
+})
+
+/* 언어 선택 */
+$(".lang").on("click", function (e) {
+  e.preventDefault(); 
+  $(".lang-list").slideToggle(250);
+  $(this).toggleClass("active");
 });

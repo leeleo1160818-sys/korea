@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>한국의 빛</title>
+  <title>한국의 빛-한국의 유산</title>
   <link rel="icon" href="img/favicon.png" type="image/png" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -14,7 +14,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/food-index.css" />
+  <link rel="stylesheet" href="css/heritage.css" />
   <link rel="stylesheet" href="css/common.css" />
   <!-- jquery -->
   <script src="js/jquery-4.0.0.js"></script>
@@ -22,6 +22,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- Isotope JS  -->
   <script src="js/isotope.pkgd.min.js"></script>
+  <!-- imagesLoaded  -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!--  Masonry -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
@@ -36,7 +40,7 @@
           </h1>
           <ul class="gnb">
             <li><a href="">한국소개</a></li>
-            <li><a href="heritage-index.html">한국의 유산</a></li>
+            <li><a href="">한국의 유산</a></li>
             <li><a href="food-index.html">대표음식</a></li>
             <li><a href="">전통문화</a></li>
             <li><a href="">K-Culture</a></li>
@@ -61,33 +65,33 @@
       </div>
     </header>
     <!-- 헤더 -->
-    <section id="food">
-      <div class="inner">
-        <h2>대표 음식</h2>
+<section id="heritage">
+  <div class="inner">
 
-        <!-- 검색 -->
-        <div class="search-box">
-          <input type="text" id="searchInput" placeholder="음식명을 입력하세요" />
-        </div>
+    <h2 class="title">한국의 유산</h2>
 
-        <!-- 탭 -->
-        <ul class="tab">
-          <li data-filter="all" class="on">전체</li>
-          <li data-filter="궁중음식">궁중음식</li>
-          <li data-filter="K-BBQ">K-BBQ</li>
-          <li data-filter="소울푸드">소울푸드</li>
-          <li data-filter="길거리음식">길거리음식</li>
-          <li data-filter="전통주">전통주</li>
-        </ul>
+    <!-- 검색 -->
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="검색">
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
 
-        <!-- 리스트 -->
-        <div class="food-list"></div>
+    <!-- 탭 -->
+    <ul class="tab">
+      <li class="on" data-filter="all">전체</li>
+      <li data-filter="세계유산">세계유산</li>
+      <li data-filter="국보">국보</li>
+      <li data-filter="보물">보물</li>
+    </ul>
 
-        <div class="btn-area">
-          <button class="more-btn">더보기</button>
-        </div>
-      </div>
-    </section>
+    <!-- 카드 리스트 -->
+    <div class="grid"></div>
+
+  </div>
+</section>
+    <!-- 섹션완료 -->
     <footer>
       <div class="inner">
         <h2>Footer</h2>
@@ -95,18 +99,9 @@
     </footer>
   </div>
 
-  <!-- 마우스커서 -->
-  <div class="cursor-light"></div>
 
-  <div class="trail"></div>
-  <div class="trail"></div>
-  <div class="trail"></div>
-  <div class="trail"></div>
-  <div class="trail"></div>
-  <div class="trail"></div>
-  <div class="trail"></div>
 
-  <script src="js/food-script.js"></script>
+  <script src="js/heritage-script.js"></script>
 </body>
 
 </html>
