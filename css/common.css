@@ -50,6 +50,10 @@ body.dark {
   color: #fff;
 }
 
+body.dark header .gnb {
+  color: #2c2c2c;
+}
+
 body.mix {
   background: url(../img/bg-mix.png);
   background-repeat: repeat;

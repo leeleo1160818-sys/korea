@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll(".color button");
+const buttons = document.querySelectorAll(".color button[data-theme]");
 
 // 저장된 테마 불러오기
 const savedTheme = localStorage.getItem("theme");
@@ -6,10 +6,10 @@ const savedTheme = localStorage.getItem("theme");
 if(savedTheme){
   document.body.classList.add(savedTheme);
 }else{
-  document.body.classList.add("light"); // 기본 테마
+  document.body.classList.add("light");
 }
 
-// 버튼 클릭
+// 테마 버튼 클릭
 buttons.forEach(button=>{
   button.addEventListener("click",()=>{
     const theme = button.dataset.theme;
@@ -30,7 +30,6 @@ const bgmButton = document.querySelector(".bgm-btn");
 let savedBgm = localStorage.getItem("bgm");
 let savedTime = localStorage.getItem("bgmTime");
 
-
 if(savedTime){
   bgm.currentTime = savedTime;
 }
@@ -39,12 +38,11 @@ if(savedBgm === "on"){
   bgm.play().catch(()=>{});
 }
 
-
 bgm.addEventListener("timeupdate", ()=>{
   localStorage.setItem("bgmTime", bgm.currentTime);
 });
 
-// 버튼
+// BGM 버튼
 bgmButton.addEventListener("click", ()=>{
 
   if(bgm.paused){
