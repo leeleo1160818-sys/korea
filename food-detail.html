@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>한국의 빛</title>
+  <title>한국의 빛-대표음식</title>
   <link rel="icon" href="img/favicon.png" type="image/png" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -34,10 +34,10 @@
           <h1 class="logo"><img src="img/logo1.png" alt="홈으로" /></h1>
           <ul class="gnb">
             <li><a href="">한국소개</a></li>
-            <li><a href="heritage-detail.html">한국의 유산</a></li>
+            <li><a href="heritage-index.html">한국의 유산</a></li>
             <li><a href="food-index.html">대표음식</a></li>
-            <li><a href="">전통문화</a></li>
-            <li><a href="">K-Culture</a></li>
+            <li><a href="tradition-index.html">전통문화</a></li>
+            <li><a href="culture-index.html">K-Culture</a></li>
           </ul>
 
           <div class="util">
@@ -53,6 +53,7 @@
               <button data-theme="light"></button>
               <button data-theme="dark"></button>
               <button data-theme="mix"></button>
+              <button class="bgm-btn"><img src="img/bgm.png" alt=""></button>
             </div>
           </div>
         </div>
@@ -105,11 +106,59 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="footer">
       <div class="inner">
-        <h2>Footer</h2>
+        <div class="footer-top">
+
+          <div class="footer-about">
+            <h3>한국의 빛</h3>
+            <p>
+              한국의 역사와 문화, 전통과 현대가 어우러진 다양한
+              이야기를 소개하는 문화 콘텐츠 웹사이트입니다.<br>
+              한국의 유산, 음식, 전통문화 그리고 K-Culture까지
+              한국의 매력을 한 곳에서 만나볼 수 있습니다.
+            </p>
+          </div>
+
+          <div class="footer-design">
+            <h4>Design</h4>
+            <ul>
+              <li>UI / UX Design</li>
+              <li>Figma Wireframe & Prototype</li>
+              <li>Responsive Layout Design</li>
+            </ul>
+          </div>
+
+          <div class="footer-dev">
+            <h4>Development</h4>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / jQuery</li>
+              <li>JSON Data Rendering</li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <h4>Project</h4>
+            <ul>
+              <li>Portfolio Website</li>
+              <li>Korean Heritage Archive</li>
+              <li>2026 Web Design Project</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy;2026 Korean Heritage Web Project.<br>
+            Designed & Developed for portfolio purposes.
+          </p>
+        </div>
       </div>
     </footer>
+    <audio id="bgm" loop>
+      <source src="audio/bgm.mp3" type="audio/mp3">
+    </audio>
   </div>
 
   <!-- 마우스커서 -->
@@ -124,6 +173,7 @@
   <div class="trail"></div>
 
   <script src="js/food-detail.js"></script>
+  <script src="/js/theme.js"></script>
 </body>
 
 </html>

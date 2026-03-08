@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한국의 빛-K-Culture</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/culture.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <!-- jquery -->
+  <script src="js/jquery-4.0.0.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Isotope JS  -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <!-- imagesLoaded  -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!--  Masonry -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-top">
+          <h1 class="logo">
+            <a href="index.html"><img src="img/logo1.png" alt="홈으로" /></a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="">한국소개</a></li>
+            <li><a href="heritage-index.html">한국의 유산</a></li>
+            <li><a href="food-index.html">대표음식</a></li>
+            <li><a href="tradition-index.html">전통문화</a></li>
+            <li><a href="culture-index.html">K-Culture</a></li>
+          </ul>
+
+          <div class="util">
+            <div class="lang">
+              <a href="#">Language <span><i class="fa-solid fa-angle-down"></i></span></a>
+              <ul class="lang-list">
+                <li><a href="#">English</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文</a></li>
+              </ul>
+            </div>
+            <div class="color">
+              <button data-theme="light"></button>
+              <button data-theme="dark"></button>
+              <button data-theme="mix"></button>
+              <button class="bgm-btn"><img src="img/bgm.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 -->
+    <section id="culture">
+      <div class="inner">
+
+        <h2 class="title">K-Culture</h2>
+        <p>"가장 한국적인 것이 가장 세계적인 순간, 지금 전 세계가 함께 즐기는 K-컬처의 눈부신 현재를 전합니다."</p>
+        <!-- 검색 -->
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="검색">
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- 탭 -->
+        <ul class="tab">
+          <li class="on" data-filter="all">전체</li>
+          <li data-filter="K-pop">K-pop</li>
+          <li data-filter="K-content">K-content</li>
+          <li data-filter="K-beauty">K-beauty</li>
+        </ul>
+      </div>
+
+
+      <!-- K-pop -->
+      <div class="inner">
+        <h2>K-pop</h2>
+        <p class="text">전 세계가 함께 즐기는 한국 대중음악의 역동적인 매력</p>
+
+        <!-- 스와이퍼 -->
+        <div class="swiper mySwiper now">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-kdh.jpg" />
+                  </div>
+                  <h3>KPop Demon Hunters</h3>
+                  <p>
+                    K-POP과 판타지가 결합된 애니메이션.<br />
+                    한국적 세계관을 글로벌 무대로 확장합니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-bts.png" />
+                  </div>
+                  <h3>BTS</h3>
+                  <p>
+                    음악과 메시지로 전 세계와 연결된 아티스트.<br />
+                    한국 대중문화의 영향력을 상징합니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="food-index.html">
+                  <div class="card-img">
+                    <img src="img/now-K-Food.png" />
+                  </div>
+                  <h3>K-Food</h3>
+                  <p>
+                    전통과 현대가 어우러진 다채로운 맛.<br />
+                    한국의 식문화가 세계인의 일상으로 이어집니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-han.png" />
+                  </div>
+                  <h3>한복</h3>
+                  <p>
+                    한복은 한국의 전통 의상으로 <br />
+                    곡선미와 여유로운 실루엣이 특징입니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- K-content-->
+      <div class="inner">
+        <h2>K-content</h2>
+        <p class="text">다양한 이야기와 창의적인 콘텐츠로 확장되는 한국 문화의 새로운 흐름</p>
+
+        <!-- 스와이퍼 -->
+        <div class="swiper mySwiper now">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-kdh.jpg" />
+                  </div>
+                  <h3>KPop Demon Hunters</h3>
+                  <p>
+                    K-POP과 판타지가 결합된 애니메이션.<br />
+                    한국적 세계관을 글로벌 무대로 확장합니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-bts.png" />
+                  </div>
+                  <h3>BTS</h3>
+                  <p>
+                    음악과 메시지로 전 세계와 연결된 아티스트.<br />
+                    한국 대중문화의 영향력을 상징합니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="food-index.html">
+                  <div class="card-img">
+                    <img src="img/now-K-Food.png" />
+                  </div>
+                  <h3>K-Food</h3>
+                  <p>
+                    전통과 현대가 어우러진 다채로운 맛.<br />
+                    한국의 식문화가 세계인의 일상으로 이어집니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-han.png" />
+                  </div>
+                  <h3>한복</h3>
+                  <p>
+                    한복은 한국의 전통 의상으로 <br />
+                    곡선미와 여유로운 실루엣이 특징입니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- K-beauty-->
+      <div class="inner">
+        <h2>K-beauty</h2>
+        <p class="text">자연스러운 아름다움과 섬세한 스킨케어에서 시작되는 한국의 뷰티 트렌드</p>
+
+        <!-- 스와이퍼 -->
+        <div class="swiper mySwiper now">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-kdh.jpg" />
+                  </div>
+                  <h3>KPop Demon Hunters</h3>
+                  <p>
+                    K-POP과 판타지가 결합된 애니메이션.<br />
+                    한국적 세계관을 글로벌 무대로 확장합니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-bts.png" />
+                  </div>
+                  <h3>BTS</h3>
+                  <p>
+                    음악과 메시지로 전 세계와 연결된 아티스트.<br />
+                    한국 대중문화의 영향력을 상징합니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="food-index.html">
+                  <div class="card-img">
+                    <img src="img/now-K-Food.png" />
+                  </div>
+                  <h3>K-Food</h3>
+                  <p>
+                    전통과 현대가 어우러진 다채로운 맛.<br />
+                    한국의 식문화가 세계인의 일상으로 이어집니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="">
+                  <div class="card-img">
+                    <img src="img/now-han.png" />
+                  </div>
+                  <h3>한복</h3>
+                  <p>
+                    한복은 한국의 전통 의상으로 <br />
+                    곡선미와 여유로운 실루엣이 특징입니다.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 섹션완료 -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-top">
+
+          <div class="footer-about">
+            <h3>한국의 빛</h3>
+            <p>
+              한국의 역사와 문화, 전통과 현대가 어우러진 다양한
+              이야기를 소개하는 문화 콘텐츠 웹사이트입니다.<br>
+              한국의 유산, 음식, 전통문화 그리고 K-Culture까지
+              한국의 매력을 한 곳에서 만나볼 수 있습니다.
+            </p>
+          </div>
+
+          <div class="footer-design">
+            <h4>Design</h4>
+            <ul>
+              <li>UI / UX Design</li>
+              <li>Figma Wireframe & Prototype</li>
+              <li>Responsive Layout Design</li>
+            </ul>
+          </div>
+
+          <div class="footer-dev">
+            <h4>Development</h4>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / jQuery</li>
+              <li>JSON Data Rendering</li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <h4>Project</h4>
+            <ul>
+              <li>Portfolio Website</li>
+              <li>Korean Heritage Archive</li>
+              <li>2026 Web Design Project</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy;2026 Korean Heritage Web Project.<br>
+            Designed & Developed for portfolio purposes.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <audio id="bgm" loop>
+      <source src="audio/bgm.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+
+
+  <script src="js/culture-script.js"></script>
+  <script src="/js/theme.js"></script>
+</body>
+
+</html>

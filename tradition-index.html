@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한국의 빛-전통문화</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tradition.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <!-- jquery -->
+  <script src="js/jquery-4.0.0.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Isotope JS  -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <!-- imagesLoaded  -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!--  Masonry -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-top">
+          <h1 class="logo">
+            <a href="index.html"><img src="img/logo1.png" alt="홈으로" /></a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="">한국소개</a></li>
+            <li><a href="heritage-index.html">한국의 유산</a></li>
+            <li><a href="food-index.html">대표음식</a></li>
+            <li><a href="tradition-index.html">전통문화</a></li>
+            <li><a href="culture-index.html">K-Culture</a></li>
+          </ul>
+
+          <div class="util">
+            <div class="lang">
+              <a href="#">Language <span><i class="fa-solid fa-angle-down"></i></span></a>
+              <ul class="lang-list">
+                <li><a href="#">English</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文</a></li>
+              </ul>
+            </div>
+            <div class="color">
+              <button data-theme="light"></button>
+              <button data-theme="dark"></button>
+              <button data-theme="mix"></button>
+              <button class="bgm-btn"><img src="img/bgm.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 -->
+    <section id="tradition">
+      <div class="inner">
+
+        <h2 class="title">전통문화</h2>
+        <p>"손끝에서 피어난 섬세한 예술, 수천 년의 지혜와 혼이 깃든 우리 문화의 정수를 깊이 있게 담아냅니다."</p>
+        <!-- 검색 -->
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="검색">
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- 탭 -->
+        <ul class="tab">
+          <li class="on" data-filter="all">전체</li>
+          <li data-filter="SOUND">소리(SOUND)</li>
+          <li data-filter="MOVEMENT">몸짓(MOVEMENT)</li>
+          <li data-filter="SPACES">공간(SPACES)</li>
+          <li data-filter="SPIRIT">정신(SPIRIT)</li>
+        </ul>
+
+        <!-- 카드 리스트 -->
+        <div class="grid"></div>
+
+      </div>
+    </section>
+    <!-- 섹션완료 -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-top">
+
+          <div class="footer-about">
+            <h3>한국의 빛</h3>
+            <p>
+              한국의 역사와 문화, 전통과 현대가 어우러진 다양한
+              이야기를 소개하는 문화 콘텐츠 웹사이트입니다.<br>
+              한국의 유산, 음식, 전통문화 그리고 K-Culture까지
+              한국의 매력을 한 곳에서 만나볼 수 있습니다.
+            </p>
+          </div>
+
+          <div class="footer-design">
+            <h4>Design</h4>
+            <ul>
+              <li>UI / UX Design</li>
+              <li>Figma Wireframe & Prototype</li>
+              <li>Responsive Layout Design</li>
+            </ul>
+          </div>
+
+          <div class="footer-dev">
+            <h4>Development</h4>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / jQuery</li>
+              <li>JSON Data Rendering</li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <h4>Project</h4>
+            <ul>
+              <li>Portfolio Website</li>
+              <li>Korean Heritage Archive</li>
+              <li>2026 Web Design Project</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy;2026 Korean Heritage Web Project.<br>
+            Designed & Developed for portfolio purposes.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <audio id="bgm" loop>
+      <source src="audio/bgm.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+
+
+  <script src="js/tradition-script.js"></script>
+  <script src="/js/theme.js"></script>
+</body>
+
+</html>

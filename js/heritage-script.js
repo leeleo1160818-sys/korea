@@ -1,18 +1,22 @@
 const API_URL = "./data/heritage.json";
 
-let dataList = [];
-let resultList = [];
+let dataList = [];      
+let resultList = [];    
 
 let page = 1;
-let pageSize = 12;
-let category = "all";
+const pageSize = 12;
 
+let category = "all";
 let isLoading = false;
 
 let masonry;
 
+// 자주 쓰는 요소
+const grid = document.querySelector(".grid");
+const noResult = document.querySelector(".no-result");
 
-/* 데이터 불러오기 */
+
+/* 데이터 */
 
 fetch(API_URL)
 .then(res => res.json())
@@ -26,14 +30,25 @@ fetch(API_URL)
 });
 
 
-/* 카드 출력 */
+/* 카드렌더 */
 
 function render(reset=false){
 
+  // 검색 결과 없을 때
+  if(resultList.length === 0){
+    grid.innerHTML = "";
+    noResult.style.display = "block";
+    isLoading = false;
+    return;
+  }
+
+  noResult.style.display = "none";
+
+  // 페이지 데이터
   const start = (page - 1) * pageSize;
   const end = start + pageSize;
 
-  const pageData = resultList.slice(start,end);
+  const pageData = resultList.slice(start, end);
 
   let html = "";
 
@@ -42,92 +57,75 @@ function render(reset=false){
     html += `
       <div class="item ${item.category}">
         <div class="card">
-
           <a href="heritage-detail.html?id=${item.id}">
-
             <img src="${item.list_image_url}" loading="lazy">
-
             <h3>${item.name}</h3>
-
             <p>${item.tagline}</p>
-
           </a>
-
         </div>
       </div>
     `;
 
   });
 
-  const grid = document.querySelector(".grid");
-
   if(reset){
     grid.innerHTML = html;
   }else{
-    grid.innerHTML += html;
+    grid.insertAdjacentHTML("beforeend", html);
   }
 
-  /* Masonry 실행 */
 
-  setTimeout(() => {
+/* 메이슨리 */
 
-  if(!masonry){
+  imagesLoaded(grid, () => {
 
-    masonry = new Masonry(".grid",{
-      itemSelector:".item",
-      columnWidth:".item",
-      percentPosition:true
-      
+    if(!masonry){
+
+      masonry = new Masonry(grid,{
+        itemSelector:".item",
+        columnWidth:".item",
+        percentPosition:true
+      });
+
+    }else{
+
+      masonry.reloadItems();
+      masonry.layout();
+
+    }
+
+    // 순차 애니메이션
+    document.querySelectorAll(".item").forEach((item,i)=>{
+      setTimeout(()=>{
+        item.classList.add("animate");
+      }, i * 80);
     });
 
-  }else{
-
-    masonry.reloadItems();
-    masonry.layout();
-
-  }
-
-  /* 순차 애니메이션 */
-
-  const items = document.querySelectorAll(".item");
-
-  items.forEach((item,i)=>{
-
-    setTimeout(()=>{
-      item.classList.add("animate");
-    }, i * 80);
+    isLoading = false;
 
   });
-
-},50);
-
-  isLoading = false;
 
 }
 
 
-/* 스크롤 로딩 */
+/* 스크롤 */
 
 window.addEventListener("scroll", () => {
 
   if(isLoading) return;
 
   const bottom =
-    window.innerHeight + window.scrollY >= document.body.offsetHeight - 200;
+    window.innerHeight + window.scrollY >=
+    document.documentElement.scrollHeight - 200;
 
-  if(bottom){
+  if(!bottom) return;
 
-    const maxPage = Math.ceil(resultList.length / pageSize);
+  const maxPage = Math.ceil(resultList.length / pageSize);
 
-    if(page < maxPage){
-
-      page++;
-      isLoading = true;
-
-      render();
-
-    }
-
+  if(page < maxPage){
+    page++;
+    isLoading = true;
+    render();
   }
 
 });
@@ -148,24 +146,14 @@ $(".tab li").click(function(e){
 
 });
 
-
-/* 검색 버튼 */
+/* 검색 */
 
 $(".search-btn").click(searchData);
 
-
-/* 엔터 검색 */
-
 $("#searchInput").on("keydown",function(e){
-
-  if(e.key === "Enter"){
-    searchData();
-  }
-
+  if(e.key === "Enter") searchData();
 });
 
-
-/* 검색 함수 */
 
 function searchData(){
 
@@ -189,19 +177,27 @@ function searchData(){
 
 }
 
-/* 테마변경 */
+
+/* 테마 */
+
 $(".color button").click(function () {
 
-  let theme = $(this).data("theme")
+  let theme = $(this).data("theme");
 
   $("body").removeClass("light dark mix")
-  $("body").addClass(theme)
+           .addClass(theme);
 
-})
+});
 
-/* 언어 선택 */
+
+/* 언어 */
+
 $(".lang").on("click", function (e) {
-  e.preventDefault(); 
+
+  e.preventDefault();
+
   $(".lang-list").slideToggle(250);
+
   $(this).toggleClass("active");
+
 });
