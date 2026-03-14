@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국의 빛-K-Culture</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- AOS css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/culture.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- jquery -->
+    <script src="js/jquery-4.0.0.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Isotope JS  -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- imagesLoaded  -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!--  Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="inner">
+          <div class="header-top">
+            <h1 class="logo">
+              <a href="index.html"><img src="img/logo1.png" alt="홈으로" /></a>
+            </h1>
+            <ul class="gnb">
+              <li><a href="int-index.html">한국소개</a></li>
+              <li>
+                <a href="heritage-index.html">한국의 유산</a>
+                <ul class="depth">
+                  <li><a href="heritage-index.html#world">세계유산</a></li>
+                  <li><a href="heritage-index.html#national">국보</a></li>
+                  <li><a href="heritage-index.html#treasure">보물</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="food-index.html">대표음식</a>
+                <ul class="depth">
+                  <li><a href="food-index.html#royal">궁중음식</a></li>
+                  <li><a href="food-index.html#K-BBQ">K-BBQ</a></li>
+                  <li><a href="food-index.html#soul">소울푸드</a></li>
+                  <li><a href="food-index.html#street">길거리음식</a></li>
+                  <li><a href="food-index.html#liquor">전통주</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="tradition-index.html">전통문화</a>
+                <ul class="depth">
+                  <li><a href="tradition-index.html#">소리</a></li>
+                  <li><a href="tradition-index.html#">공연</a></li>
+                  <li><a href="tradition-index.html#">건축</a></li>
+                  <li><a href="tradition-index.html#">공예&한복</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="culture-index.html">K-Culture</a>
+                <ul class="depth">
+                  <li><a href="culture-index.html#">K-POP</a></li>
+                  <li><a href="culture-index.html#">K-CONTENT</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="util">
+              <div class="lang">
+                <a href="#"
+                  >Language <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <ul class="lang-list">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">日本語</a></li>
+                  <li><a href="#">中文</a></li>
+                </ul>
+              </div>
+              <div class="color">
+                <button type="button" data-theme="light"></button>
+                <button type="button" data-theme="dark"></button>
+                <button type="button" data-theme="mix"></button>
+                <button type="button" class="bgm-btn"><img src="img/bgm.png" alt="" /></button>
+              </div>
+              <div class="mobile">
+                <button type="button" class="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 헤더 -->
+      <section id="culture">
+        <div class="inner">
+          <div class="culture-top">
+            <div class="culture-title">
+              <h2>K-Culture Spotlight</h2>
+              <p class="text">
+                "전 세계를 사로잡은 K-POP부터 드라마와 영화까지, 한국의 다채로운 K-Culture를 만나보세요."
+              </p>
+            </div>
+            <figure><img src="img/food-main.png" alt="" /></figure>
+          </div>
+        </div>
+
+        <!-- K-pop -->
+        <div id="k-pop">
+          <div class="inner">
+            <h2>K-pop</h2>
+            <p class="text">전 세계가 함께 즐기는 한국 대중음악의 역동적인 매력</p>
+            <!-- 스와이퍼 -->
+            <div class="swiper mySwiper k-pop">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <a href="">
+                      <div class="card-img">
+                        <img src="img/cul/blackpink.avif" />
+                      </div>
+                      <h3>BLACKPINK</h3>
+                      <p>
+                        강렬한 퍼포먼스와 스타일로<br />
+                        전 세계 팬들을 사로잡은 K-POP 걸그룹
+                      </p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <a href="">
+                      <div class="card-img">
+                        <img src="img/now-bts.png" />
+                      </div>
+                      <h3>BTS</h3>
+                      <p>
+                        글로벌 음악 시장을 이끈<br />
+                        세계적인 K-POP 그룹
+                      </p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <a href="">
+                      <div class="card-img">
+                        <img src="img/cul/newjeans.webp" />
+                      </div>
+                      <h3>NewJeans</h3>
+                      <p>
+                        트렌디한 음악과 감성으로<br />
+                        Z세대에게 사랑받는 K-POP 걸그룹
+                      </p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <a href="">
+                      <div class="card-img">
+                        <img src="img/cul/seventeen.jpg" />
+                      </div>
+                      <h3>SEVENTEEN</h3>
+                      <p>
+                        완성도 높은 퍼포먼스와 음악으로<br />
+                        글로벌 팬덤을 구축한 K-POP 그룹
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next kpop-next"></div>
+              <div class="swiper-button-prev kpop-prev"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- K-content-->
+        <div id="k-content">
+          <div class="inner">
+            <h2>K-content</h2>
+            <p class="text">다양한 이야기와 창의적인 콘텐츠로 확장되는 한국 문화의 새로운 흐름</p>
+            <div class="k-con">
+              <!-- 2번 Swiper -->
+              <div class="swiper con-view">
+                <div class="swiper-wrapper">
+                  <!-- Squid Game -->
+                  <div class="swiper-slide" data-hash="Squid">
+                    <div class="con-card">
+                      <figure>
+                        <a href=""><img src="img/cul/con01.avif" alt="" /></a>
+                      </figure>
+                      <div class="text-area">
+                        <h2>Squid Game (오징어 게임)</h2>
+                        <p class="text">
+                          전 세계적으로 선풍적인 인기를 끌었던 한국 드라마.<br />
+                          생존 게임을 통해 사회의 불평등과 인간 본성을 보여주며 글로벌 문화 현상이 되었습니다.
+                        </p>
+                        <span>#SquidGame #Netflix #KDrama #GlobalHit</span>
+                        <div class="btn-area">
+                          <button type="button" class="btn">자세히보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Parasite -->
+                  <div class="swiper-slide" data-hash="parasite">
+                    <div class="con-card">
+                      <figure>
+                        <a href=""><img src="img/cul/Parasite.webp" alt="" /></a>
+                      </figure>
+                      <div class="text-area">
+                        <h2>Parasite (기생충)</h2>
+                        <p class="text">
+                          봉준호 감독의 영화로 아카데미 작품상을 포함해 4관왕을 차지하며 세계 영화사에 큰 영향을
+                          남겼습니다.<br />
+                          한국 영화의 위상을 전 세계에 알린 작품입니다.
+                        </p>
+                        <span>#Parasite #BongJoonHo #OscarWinner #KFilm</span>
+                        <div class="btn-area">
+                          <button type="button" class="btn">자세히보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- K-Demon Hunters -->
+                  <div class="swiper-slide" data-hash="kdh">
+                    <div class="con-card">
+                      <figure>
+                        <a href=""><img src="img/cul/kdh.jpg" alt="" /></a>
+                      </figure>
+                      <div class="text-area">
+                        <h2>K-POP Demon Hunters (케데헌)</h2>
+                        <p class="text">
+                          한국적인 세계관과 현대 판타지가 결합된 액션 콘텐츠.<br />
+                          악령을 사냥하는 헌터들의 이야기를 통해 새로운 K-콘텐츠 스타일을 보여줍니다.
+                        </p>
+                        <span>#KDemonHunters #KFantasy #Action #Webtoon</span>
+                        <div class="btn-area">
+                          <button type="button" class="btn">자세히보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Kingdom -->
+                  <div class="swiper-slide" data-hash="kingdom">
+                    <div class="con-card">
+                      <figure>
+                        <a href=""><img src="img/cul/kingdom.jpg" alt="" /></a>
+                      </figure>
+                      <div class="text-area">
+                        <h2>Kingdom (킹덤)</h2>
+                        <p class="text">
+                          조선시대를 배경으로 한 좀비 사극 드라마.<br />
+                          한국 역사와 스릴러 장르가 결합된 독특한 작품으로 세계적으로 큰 인기를 얻었습니다.
+                        </p>
+                        <span>#Kingdom #Netflix #KZombie #HistoricalDrama</span>
+                        <div class="btn-area">
+                          <button type="button" class="btn">자세히보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 사랑의불시착 -->
+                  <div class="swiper-slide" data-hash="love">
+                    <div class="con-card">
+                      <figure>
+                        <a href=""><img src="img/cul/love.jpg" alt="" /></a>
+                      </figure>
+                      <div class="text-area">
+                        <h2>Crash Landing on You (사랑의 불시착)</h2>
+                        <p class="text">
+                          패러글라이딩 사고로 북한에 불시착한 재벌 상속녀와 그녀를 숨겨주는 북한 장교의 로맨스를 그린
+                          드라마.<br />
+                          전 세계 시청자들에게 큰 사랑을 받은 K-드라마입니다.
+                        </p>
+                        <span>#CrashLandingOnYou #KDrama #Romance #Netflix</span>
+                        <div class="btn-area">
+                          <button type="button" class="btn">자세히보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- K-beauty-->
+        <!--    <div id="k-beauty">
+          <div class="inner">
+            <h2>K-Beauty Trend</h2>
+            <p class="sub">최신 K-Beauty 트렌드를 만나보세요!</p>
+
+            <div class="swiper beauty-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide beauty-card">
+                  <img src="https://picsum.photos/500/400?random=1" alt="" />
+                  <div class="beauty-text">
+                    <h3>Glass Skin</h3>
+                    <p>맑고 촉촉한 피부 표현이 특징인 K-Beauty 대표 트렌드</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide beauty-card">
+                  <img src="https://picsum.photos/500/400?random=2" alt="" />
+                  <div class="beauty-text">
+                    <h3>Cushion Makeup</h3>
+                    <p>가볍고 자연스러운 피부 표현을 만드는 쿠션 메이크업</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide beauty-card">
+                  <img src="https://picsum.photos/500/400?random=3" alt="" />
+                  <div class="beauty-text">
+                    <h3>10 Step Skincare</h3>
+                    <p>클렌징부터 보습까지 단계별 스킨케어 루틴</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide beauty-card">
+                  <img src="https://picsum.photos/500/400?random=4" alt="" />
+                  <div class="beauty-text">
+                    <h3>Natural Glow</h3>
+                    <p>자연스럽고 건강한 광채 피부 표현</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <!-- 섹션완료 -->
+      <footer id="footer">
+        <div class="inner">
+          <div class="footer-top">
+            <div class="footer-about">
+              <h3>한국의 빛</h3>
+              <p>
+                한국의 역사와 문화, 전통과 현대가 어우러진 다양한 이야기를 소개하는 문화 콘텐츠 웹사이트입니다.<br />
+                한국의 유산, 음식, 전통문화 그리고 K-Culture까지 한국의 매력을 한 곳에서 만나볼 수 있습니다.
+              </p>
+            </div>
+
+            <div class="footer-design">
+              <h4>Design</h4>
+              <ul>
+                <li>UI / UX Design</li>
+                <li>Figma Wireframe & Prototype</li>
+                <li>Responsive Layout Design</li>
+              </ul>
+            </div>
+
+            <div class="footer-dev">
+              <h4>Development</h4>
+              <ul>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript / jQuery</li>
+                <li>JSON Data Rendering</li>
+              </ul>
+            </div>
+
+            <div class="footer-info">
+              <h4>Project</h4>
+              <ul>
+                <li>Portfolio Website</li>
+                <li>Korean Heritage Archive</li>
+                <li>2026 Web Design Project</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              &copy;2026 Korean Heritage Web Project.<br />
+              Designed & Developed for portfolio purposes.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <audio id="bgm" loop>
+        <source src="audio/bgm.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/culture-script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
