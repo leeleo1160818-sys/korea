@@ -28,6 +28,54 @@ var swiper = new Swiper(".con-view", {
   },
 });
 
+const modal = document.getElementById("videoModal");
+  const video = document.getElementById("popupVideo");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // 자세히보기 버튼 클릭 시 모달 열기
+  document.querySelectorAll(".con-view .swiper-slide .btn").forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const slide = this.closest(".swiper-slide");
+      const videoSrc = slide.dataset.video;
+
+      if (!videoSrc) return;
+
+      video.src = videoSrc;
+
+      modal.style.display = "flex";
+      document.body.classList.add("modal-open");
+
+      video.play().catch(() => {});
+    });
+  });
+
+  // 모달 닫기
+  function closeModal() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+
+    video.pause();
+    video.currentTime = 0;
+    video.src = "";
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
 window.addEventListener("load", function () {
   // 1. 주소창에 #이 있는지 확인 (예: #kdh)
   if (window.location.hash) {

@@ -1,8 +1,8 @@
-const API_URL = "https://69a843a637caab4b8c6138b7.mockapi.io/api/v1/heri";
-/* const API_URL = "./data/heritage.json"; */
+/* const API_URL = "https://69a843a637caab4b8c6138b7.mockapi.io/api/v1/heri"; */
+const API_URL = "./data/heritage.json";
 
 let $grid;
-let limit = 12; // 처음 보여줄 개수
+let limit = 12; 
 let currentFilter = "*";
 let keyword = "";
 
@@ -48,14 +48,13 @@ function renderAll(data) {
       stagger: 30,
     });
 
-    update(); // 초기 필터 적용
+    update(); 
 
-    // [추가] 페이지 로드 시 "전체" 탭에 배경 맞추기
     moveTabBg($(".tab li.on"));
   });
 }
 
-// 3. 핵심 필터 + 개수 관리
+
 function update() {
   if (!$grid) return;
 
@@ -81,7 +80,7 @@ function update() {
   }, 100);
 }
 
-// 4. 무한 스크롤
+/* 무한 스크롤 */
 $(window).on("scroll", function () {
   if (!$grid) return;
 
@@ -102,11 +101,11 @@ $(window).on("scroll", function () {
   }
 });
 
-// 5. 탭 클릭
+
 $(".tab li").click(function () {
   $(this).addClass("on").siblings().removeClass("on");
 
-  // [수정] 클릭한 탭으로 배경 이동 함수 실행
+
   moveTabBg($(this));
 
   const filterValue = $(this).data("filter");
@@ -116,7 +115,7 @@ $(".tab li").click(function () {
   update();
 });
 
-// 6. 탭 배경 이동 함수
+// 탭 배경 이동 함수
 function moveTabBg(el) {
   if (!el || el.length === 0) return;
 
@@ -127,12 +126,11 @@ function moveTabBg(el) {
   });
 }
 
-// [추가] 브라우저 크기 변할 때 배경 위치 재조정
+//  브라우저 크기 변할 때 배경 위치 재조정
 $(window).resize(function () {
   moveTabBg($(".tab li.on"));
 });
 
-// 7. 검색
 $("#searchInput").on("keyup", function () {
   keyword = $(this).val().toLowerCase().trim();
   limit = 12;

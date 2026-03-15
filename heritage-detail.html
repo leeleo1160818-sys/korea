@@ -34,7 +34,7 @@
 
 <body>
   <div id="wrap">
-    <header>
+   <header>
       <div class="inner">
         <div class="header-top">
           <h1 class="logo">
@@ -63,17 +63,17 @@
             <li>
               <a href="tradition-index.html">전통문화</a>
               <ul class="depth">
-                <li><a href="tradition-index.html#">소리</a></li>
-                <li><a href="tradition-index.html#">공연</a></li>
-                <li><a href="tradition-index.html#">건축</a></li>
-                <li><a href="tradition-index.html#">공예&한복</a></li>
+                <li><a href="tradition-detail.html?category=sound">소리</a></li>
+                <li><a href="tradition-detail.html?category=perform">공연</a></li>
+                <li><a href="tradition-detail.html?category=arc">건축</a></li>
+                <li><a href="tradition-detail.html?category=cra">공예&한복</a></li>
               </ul>
             </li>
             <li>
               <a href="culture-index.html">K-Culture</a>
               <ul class="depth">
-                <li><a href="culture-index.html#">K-POP</a></li>
-                <li><a href="culture-index.html#">K-CONTENT</a></li>
+                <li><a href="culture-index.html#k-pop">K-POP</a></li>
+                <li><a href="culture-index.html#k-content">K-CONTENT</a></li>
               </ul>
             </li>
           </ul>
@@ -104,30 +104,31 @@
     <section id="heritage-detail">
       <div class="inner">
         <!-- 상단 이미지 -->
-        <div class="hero">
+        <!-- <div class="hero">
           <img id="detail-image" />
-        </div>
+        </div> -->
 
         <!-- 제목 -->
         <div class="title-area">
-          <h1 id="detail-name"></h1>
+          <p class="detail-kr-category" id="detail-category" data-aos="fade" data-aos-duration="500" data-aos-delay="100">
+          </p>
+          <h3 id="detail-name"></h3>
           <p id="detail-tagline"></p>
         </div>
 
-        <div class="info-grid">
-          <!-- 유산 소개 -->
-          <div class="box">
+        <div class="detail-top">
+          <div class="box intro">
             <h3>유산 소개</h3>
             <p id="detail-intro"></p>
           </div>
 
-          <!-- 역사 -->
-          <div class="box">
+          <div class="box history">
             <h3>역사와 배경</h3>
             <p id="detail-history"></p>
           </div>
+        </div>
 
-          <!-- 갤러리 -->
+        <div class="detail-row bot">
           <div class="box gallery">
             <h3>주요 사진</h3>
             <div class="gallery-grid">
@@ -139,21 +140,20 @@
           </div>
 
           <div class="etc">
-            <!-- 체험 -->
             <div class="box">
               <h3>관련 문화 / 체험</h3>
               <ul id="experience"></ul>
             </div>
-            <!-- 위치 -->
+
             <div class="box">
               <h3>위치 / 지역</h3>
               <p id="location"></p>
             </div>
-            <!-- 버튼 영역 -->
-            <div class="btn-area">
-              <button class="return">목록으로 가기</button>
-            </div>
+
           </div>
+        </div>
+        <div class="btn-area">
+          <button class="return">목록으로 가기</button>
         </div>
       </div>
     </section>

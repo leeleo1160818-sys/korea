@@ -216,6 +216,7 @@ body.modal-open{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.3s ease-in;
 }
 
 #culture li span {
@@ -232,7 +233,17 @@ body.modal-open{
   box-sizing: border-box;
   display: block;
   text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in;
 }
+
+#culture li a:hover span{
+  opacity: 1;
+}
+
+/* #culture li a:hover img {
+  scale: 1.1;
+}  */
 
 /* 갤러리*/
 .back {
@@ -437,13 +448,14 @@ body.modal-open{
 .dark .gallery-tab > li,
 .dark .gallery-tab > li:hover,
 .dark .info .title,
-.dark .info .desc {
+.dark .info .desc,
+.dark #korea-now .swiper-button-next,
+.dark #korea-now .swiper-button-prev {
   color: #fff;
 }
 
-.dark #korea-now .swiper-button-next,
-.dark #korea-now .swiper-button-prev{
-  color: #fff;
+.dark .info .cate {
+color: #c50b0b;
 }
 
 .dark .box h3 {

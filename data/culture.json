@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "category": "k-pop",
+    "name": "BLACKPINK",
+    "tagline": "강렬한 퍼포먼스와 스타일로 전 세계 팬들을 사로잡은 K-POP 걸그룹",
+    "intro": "BLACKPINK는 세련된 음악과 퍼포먼스로 글로벌 팬덤을 구축한 대표적인 K-POP 걸그룹입니다. 각 멤버의 개성과 팀의 강한 시너지가 돋보입니다.",
+    "history": "2016년 데뷔 이후 다수의 히트곡과 월드투어를 통해 세계적인 인지도를 얻었으며, 패션과 문화 전반에서도 큰 영향력을 보여주고 있습니다.",
+    "img1": "https://picsum.photos/seed/blackpink-1/600/600",
+    "img2": "https://picsum.photos/seed/blackpink-2/600/600",
+    "img3": "https://picsum.photos/seed/blackpink-3/600/600",
+    "img4": "https://picsum.photos/seed/blackpink-4/600/600"
+  },
+  {
+    "id": 2,
+    "category": "k-pop",
+    "name": "BTS",
+    "tagline": "글로벌 음악 시장을 이끈 세계적인 K-POP 그룹",
+    "intro": "BTS는 음악과 메시지를 통해 전 세계 팬들과 소통하며 K-POP의 글로벌 확장을 이끈 그룹입니다.",
+    "history": "데뷔 이후 다양한 앨범과 공연으로 국제적인 기록을 세웠고, 한국 대중음악의 위상을 높인 대표적인 아티스트로 평가받습니다.",
+    "img1": "https://picsum.photos/seed/bts-1/600/600",
+    "img2": "https://picsum.photos/seed/bts-2/600/600",
+    "img3": "https://picsum.photos/seed/bts-3/600/600",
+    "img4": "https://picsum.photos/seed/bts-4/600/600"
+  },
+  {
+    "id": 3,
+    "category": "k-pop",
+    "name": "NewJeans",
+    "tagline": "트렌디한 음악과 감성으로 Z세대에게 사랑받는 K-POP 걸그룹",
+    "intro": "NewJeans는 자연스럽고 감각적인 스타일로 새로운 K-POP 감성을 보여준 팀입니다.",
+    "history": "데뷔와 동시에 큰 주목을 받았으며, 독창적인 음악과 비주얼 콘셉트로 국내외 팬층을 빠르게 넓혀가고 있습니다.",
+    "img1": "https://picsum.photos/seed/newjeans-1/600/600",
+    "img2": "https://picsum.photos/seed/newjeans-2/600/600",
+    "img3": "https://picsum.photos/seed/newjeans-3/600/600",
+    "img4": "https://picsum.photos/seed/newjeans-4/600/600"
+  },
+  {
+    "id": 4,
+    "category": "k-pop",
+    "name": "SEVENTEEN",
+    "tagline": "완성도 높은 퍼포먼스와 음악으로 글로벌 팬덤을 구축한 K-POP 그룹",
+    "intro": "SEVENTEEN은 자작곡과 퍼포먼스 기획 능력을 바탕으로 팀만의 색깔을 구축한 그룹입니다.",
+    "history": "다인원 그룹의 장점을 살린 무대 구성과 폭넓은 음악 스펙트럼으로 꾸준히 성장하며 세계적인 인기를 얻고 있습니다.",
+    "img1": "https://picsum.photos/seed/seventeen-1/600/600",
+    "img2": "https://picsum.photos/seed/seventeen-2/600/600",
+    "img3": "https://picsum.photos/seed/seventeen-3/600/600",
+    "img4": "https://picsum.photos/seed/seventeen-4/600/600"
+  }
+]

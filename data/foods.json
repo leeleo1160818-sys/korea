@@ -2,7 +2,8 @@
   {
     "id": 1,
     "category": "royal",
-    "name": "신선로 | Royal Hot Pot",
+    "kr-category": "궁중음식",
+    "name": "신선로 | Sinseollo",
     "tagline": "다양한 재료가 어우러진 궁중 전골",
     "list_image_url": "https://i.pinimg.com/736x/4b/32/aa/4b32aade89ced6092df287505a7c327d.jpg",
     "detail_image_url": "https://www.vviptravel.com/wp-content/uploads/2019/06/korean-traditional-full-course-meal-korea-house.jpg",
@@ -15,7 +16,8 @@
   {
     "id": 2,
     "category": "K-BBQ",
-    "name": "돼지갈비 | Grilled Pork Ribs",
+    "kr-category": "K-BBQ",
+    "name": "돼지갈비 | Dwaeji Galbi",
     "tagline": "달콤한 양념의 돼지 갈비 구이",
     "list_image_url": "https://image.homeplus.kr/rtd/9e351253-da6f-4039-aadb-4eaa9839a2a5?w=750",
     "detail_image_url": "https://image.homeplus.kr/rtd/9e351253-da6f-4039-aadb-4eaa9839a2a5?w=750",
@@ -28,7 +30,8 @@
   {
     "id": 3,
     "category": "K-BBQ",
-    "name": "닭갈비 | Spicy Stir-fried Chicken",
+    "kr-category": "K-BBQ",
+    "name": "닭갈비 | Dakgalbi",
     "tagline": "매콤한 양념 닭고기 볶음",
     "list_image_url": "https://semie.cooking/image/contents/recipe/gn/eu/agtpcxyj/IRD/148063178avri.jpg",
     "detail_image_url": "https://semie.cooking/image/contents/recipe/gn/eu/agtpcxyj/IRD/148063178avri.jpg",
@@ -41,6 +44,7 @@
   {
     "id": 4,
     "category": "soul",
+    "kr-category": "소울음식",
     "name": "비빔밥 | Bibimbap",
     "tagline": "다양한 재료를 비벼 먹는 한식",
     "list_image_url": "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/delicious-bibimbap-bowl-with-fresh-vegetables-mWcilkEBfhN6cXYdeqerj.webp",
@@ -54,7 +58,8 @@
   {
     "id": 5,
     "category": "soul",
-    "name": "불고기 | Korean BBQ Beef",
+    "kr-category": "소울음식",
+    "name": "불고기 | Bulgogi",
     "tagline": "달콤한 간장 양념 소고기 요리",
     "list_image_url": "https://saenong.com/web/product/big/shop1_9b00b1dbc0800bead6de32dcc09eb8b5.jpg",
     "detail_image_url": "https://saenong.com/web/product/big/shop1_9b00b1dbc0800bead6de32dcc09eb8b5.jpg",
@@ -67,6 +72,7 @@
   {
     "id": 6,
     "category": "soul",
+    "kr-category": "소울음식",
     "name": "김치 | Kimchi",
     "tagline": "한국을 대표하는 발효 음식",
     "list_image_url": "https://cdn.news.hidoc.co.kr/news/photo/202601/57758_87339_2931.png",
@@ -80,7 +86,8 @@
   {
     "id": 7,
     "category": "soul",
-    "name": "삼계탕 | Ginseng Chicken Soup",
+    "kr-category": "소울음식",
+    "name": "삼계탕 | Samgyetang",
     "tagline": "인삼과 닭을 넣어 끓인 보양식",
     "list_image_url": "https://lh4.googleusercontent.com/proxy/QnkfyU-y6PcfWb30qxm_TkazVHzMWqNyRinmVLD37FnLDHElyXGgL2KJ3OyQV3564OK3rBeYlFME4RXy62SbNsOTo_VpUP95uGA6S0zRjPJxRBZ8-mREhLPE_edQ",
     "detail_image_url": "https://image.8dogam.com/resized/product/asset/v1/upload/01540b1ca40247e8a0cc7162f702cd37.jpg?type=big&res=3x&ext=jpg",
@@ -93,6 +100,7 @@
   {
     "id": 8,
     "category": "street",
+    "kr-category": "길거리음식",
     "name": "K치킨 | Korean Fried Chicken",
     "tagline": "바삭한 한국식 프라이드 치킨",
     "list_image_url": "https://img.kr.gcp-karroter.net/businessPlatform/bizPlatform/profile/center_biz_13252708/1747200058113/d8552a950a2585cd107c353052fe37f49998fd2d0ea7e55ad7cbaaf5d2cc9653.jpeg?q=95&s=1440x1440&t=inside",
@@ -106,7 +114,8 @@
   {
     "id": 9,
     "category": "street",
-    "name": "떡볶이 | Spicy Rice Cakes",
+    "kr-category": "길거리음식",
+    "name": "떡볶이 | Tteokbokki",
     "tagline": "매콤달콤한 떡 요리",
     "list_image_url": "https://cdn.wikifoodie.co.kr/news/photo/202503/1349_3606_5554.jpg",
     "detail_image_url": "https://png.pngtree.com/png-clipart/20240325/original/pngtree-tteokbokki-korean-food-png-image_14674120.png",
@@ -119,7 +128,8 @@
   {
     "id": 10,
     "category": "street",
-    "name": "계란빵 | Egg Bread",
+    "kr-category": "길거리음식",
+    "name": "계란빵 | Gyeranppang",
     "tagline": "빵 위에 계란을 올려 구운 간식",
     "list_image_url": "https://i.namu.wiki/i/j65NEUGRZ3EfiC2S5eDjX3O040asWwNzKPNm0VGtNudqLjsVsRkwpBCyUZq8y18YTotVPTUccvn5CdCNUyGDlg.webp",
     "detail_image_url": "https://static.cdn.soomgo.com/upload/portfolio/110a57d0-83aa-4a18-8e4f-83ada17dc279.jpg?webp=1",
@@ -132,7 +142,8 @@
   {
     "id": 11,
     "category": "liquor",
-    "name": "막걸리 | Korean Rice Wine",
+    "kr-category": "전통주",
+    "name": "막걸리 | Makgeolli",
     "tagline": "쌀로 빚은 전통 발효 술",
     "list_image_url": "https://i.namu.wiki/i/AhlIjjrbekVah3dr0lCXYy6TY-FHiRMkI3ZVzoRTTedtA09rkow1-NjDLDZM2Umf5UzzdH1s1ph9O1wngVcvgQ.webp",
     "detail_image_url": "https://i.namu.wiki/i/D3kBeZmqyvX7-tBqrZ3MgopUM9Q5UzxeoPC28XK7ID5JpacZet4EQ4gy3wVPAYKMnUZuJNWjaLgxaClKCprRvw.webp",
@@ -145,6 +156,7 @@
   {
     "id": 12,
     "category": "liquor",
+    "kr-category": "전통주",
     "name": "소주 | Soju",
     "tagline": "한국 대표 증류주",
     "list_image_url": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/6Thj/image/X_A7vE9gUKUIdLibDVFhjDe_29w.jpg",
@@ -158,7 +170,8 @@
   {
     "id": 13,
     "category": "liquor",
-    "name": "가평 잣 막걸리 | Pine Nut Rice Wine",
+    "kr-category": "전통주",
+    "name": "가평 잣 막걸리 | Gapyeong Pine Nut Makgeolli",
     "tagline": "잣 향이 나는 막걸리",
     "list_image_url": "https://img.29cm.co.kr/next-product/2024/07/18/7e7fc3e6c20541b9810e0ceddc55e12e_20240718152123.jpg?width=1200&format=webp",
     "detail_image_url": "https://img.29cm.co.kr/next-product/2024/07/18/7e7fc3e6c20541b9810e0ceddc55e12e_20240718152123.jpg?width=1200&format=webp",
@@ -171,7 +184,8 @@
   {
     "id": 14,
     "category": "liquor",
-    "name": "경주 교동법주 | Gyodong Beopju",
+    "kr-category": "전통주",
+    "name": "경주 교동법주 | Gyeongju Gyodong Beopju",
     "tagline": "경주의 전통 청주",
     "list_image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMjAyMTRfOTAg/MDAxNjQ0ODA4NTcyNDkw.UPs6dhuVaGwoO1kh_Ft21eNiBGT1N1PZu6D81QzJBskg.oXJGXTpdEAU7FGGslIGpkkXzJOXC0G-J24ZbPSX7HFQg.JPEG.jane2489/IMG_0071.jpg?type=w800",
     "detail_image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMjAyMTRfOTAg/MDAxNjQ0ODA4NTcyNDkw.UPs6dhuVaGwoO1kh_Ft21eNiBGT1N1PZu6D81QzJBskg.oXJGXTpdEAU7FGGslIGpkkXzJOXC0G-J24ZbPSX7HFQg.JPEG.jane2489/IMG_0071.jpg?type=w800",
@@ -184,7 +198,8 @@
   {
     "id": 15,
     "category": "liquor",
-    "name": "안동 소주 | Andong Distilled Soju",
+    "kr-category": "전통주",
+    "name": "안동 소주 | Andong Soju",
     "tagline": "전통 증류 방식 소주",
     "list_image_url": "https://d38cxpfv0ljg7q.cloudfront.net/content_images/contents_images-1683875403343-1.jpg",
     "detail_image_url": "https://ilovegohyang.go.kr/upload/item/G2002011064/202501021413260097_L.jpg",
@@ -197,6 +212,7 @@
   {
     "id": 16,
     "category": "liquor",
+    "kr-category": "전통주",
     "name": "진도 홍주 | Jindo Hongju",
     "tagline": "붉은 색의 전통 증류주",
     "list_image_url": "https://img.khan.co.kr/news/2019/07/09/2019070901001149200089021.jpg",
@@ -210,6 +226,7 @@
   {
     "id": 17,
     "category": "liquor",
+    "kr-category": "전통주",
     "name": "문배주 | Munbaeju",
     "tagline": "배 향이 나는 전통 술",
     "list_image_url": "https://d38cxpfv0ljg7q.cloudfront.net/content_images/contents_images-1653029393585-2.jpg",
@@ -223,7 +240,8 @@
   {
     "id": 18,
     "category": "liquor",
-    "name": "전주 이강주 | Leegangju",
+    "kr-category": "전통주",
+    "name": "전주 이강주 | Jeonju Leegangju",
     "tagline": "배와 생강 향이 나는 전통주",
     "list_image_url": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/6Thj/image/_Jxf2XYdcGf-dDEK5cGGHaWMWdU.jpg",
     "detail_image_url": "https://lh6.googleusercontent.com/proxy/7bbRFdSD7yjtDPwDU7n3cI4clU2IsxJIOHJh9mLQeWfuqxAI8BORSHyiT_5quWN2xgrvgrqJXfobn8nlmtPJO1_kh29wf5HCzUZ4JYLgFRhK5H1pEqJKYAkeyPA8jxplbQ",
@@ -236,7 +254,8 @@
   {
     "id": 19,
     "category": "royal",
-    "name": "구절판 | Platter of Nine Delicacies",
+    "kr-category": "궁중음식",
+    "name": "구절판 | Gujeolpan",
     "tagline": "아홉 칸 그릇에 담긴 궁중 요리",
     "list_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cooking_for_Gujeolpan%28Platter_of_Nine_Delicacies%29_1.jpg",
     "detail_image_url": "https://pbs.twimg.com/media/DQ0naFSUIAAyQm7.jpg",
@@ -249,7 +268,8 @@
   {
     "id": 20,
     "category": "royal",
-    "name": "수라상 | Royal Korean Dinner Table",
+    "kr-category": "궁중음식",
+    "name": "수라상 | Surasang",
     "tagline": "조선 왕의 식사를 의미하는 궁중 상차림",
     "list_image_url": "https://lh3.googleusercontent.com/ci/AL18g_TIUCz9p_Arg-zm99-2JEbHiiFmhuolHyU6-ASPVBpH92G0wZco43qBcmRY6AliZiKhCgmU=s1200",
     "detail_image_url": "https://itourbox.kr/wp-content/uploads/2023/02/B-13-%EC%88%98%EB%9D%BC%EC%83%811.jpg",
@@ -262,7 +282,8 @@
   {
     "id": 21,
     "category": "royal",
-    "name": "궁중떡볶이 | Royal Soy Sauce Rice Cakes",
+    "kr-category": "궁중음식",
+    "name": "궁중떡볶이 | Gungjung Tteokbokki",
     "tagline": "간장 양념으로 볶은 궁중 떡 요리",
     "list_image_url": "https://koreanmealkit.com/cdn/shop/files/031_aff2eef8-e9be-4590-a8c7-07b4bb345232.png?v=1740508856",
     "detail_image_url": "https://koreanmealkit.com/cdn/shop/files/031_aff2eef8-e9be-4590-a8c7-07b4bb345232.png?v=1740508856",
@@ -275,7 +296,8 @@
   {
     "id": 22,
     "category": "royal",
-    "name": "너비아니 | Royal Grilled Beef Slices",
+    "kr-category": "궁중음식",
+    "name": "너비아니 | Neobiani",
     "tagline": "얇게 저민 소고기를 구운 궁중 요리",
     "list_image_url": "https://static.wtable.co.kr/image/production/service/recipe/2547/3143a598-a9e4-4447-8372-c053b77b8298.jpg",
     "detail_image_url": "https://ecimg.cafe24img.com/pg782b73902278016/marketbh/web/product/extra/big/20240313/dd99317ef53792fbc84eb15ffbc651a1.png",
@@ -288,7 +310,8 @@
   {
     "id": 23,
     "category": "royal",
-    "name": "탕평채 | Mung Bean Jelly Salad",
+    "kr-category": "궁중음식",
+    "name": "탕평채 | Tangpyeongchae",
     "tagline": "녹두묵과 채소를 무친 궁중 음식",
     "list_image_url": "https://recipe1.ezmember.co.kr/cache/recipe/2019/04/22/b62973aa0c0a4518ad41aeb5cbb1b4fc1.jpg",
     "detail_image_url": "https://www.djmeditournews.com/theme/djmeditour/skin/newsletter12/basic/img/nl12_ft_img1.jpg",
@@ -301,7 +324,8 @@
   {
     "id": 24,
     "category": "K-BBQ",
-    "name": "한우구이 | Premium Grilled Korean Beef",
+    "kr-category": "K-BBQ",
+    "name": "한우구이 | Hanwoo Gui",
     "tagline": "한국 토종 소고기 구이",
     "list_image_url": "https://img1.daumcdn.net/thumb/R1280x0.fwebp/?fname=https://t1.daumcdn.net/brunch/service/user/33n7/image/AntpBlwLUPigoFgbhFLxs4--900.JPG",
     "detail_image_url": "https://m.gogipangpang.com/web/product/big/202402/e9fdcddc086290cddb843895d235bb60.jpg",
@@ -314,7 +338,8 @@
   {
     "id": 25,
     "category": "K-BBQ",
-    "name": "삼겹살 | Grilled Pork Belly",
+    "kr-category": "K-BBQ",
+    "name": "삼겹살 | Samgyeopsal",
     "tagline": "한국인이 사랑하는 돼지고기 구이",
     "list_image_url": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201702/27/117f5b49-1d09-4550-8ab7-87c0d82614de.jpg",
     "detail_image_url": "https://oasisprodproduct.edge.naverncp.com/87206/detail/0_60f9ab21-8ea9-4f35-81fa-91e0c8626a22.jpg",
@@ -327,7 +352,8 @@
   {
     "id": 26,
     "category": "soul",
-    "name": "잡채 | Stir-fried Glass Noodles",
+    "kr-category": "소울음식",
+    "name": "잡채 | Japchae",
     "tagline": "당면과 채소를 볶은 잔치 음식",
     "list_image_url": "https://blog.kakaocdn.net/dna/9EWha/btsGl1KteX4/AAAAAAAAAAAAAAAAAAAAAPyNGYBCgMKUam8gksHS4ux9jNEFCAZZj9mYO1hoVU2t/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1774969199&allow_ip=&allow_referer=&signature=L5cmK%2B6tMm1v%2BnRn62COJoa3SvU%3D",
     "detail_image_url": "https://banchan365.com/cdn/shop/files/FishcakeJapchae-0.png?v=1765586293&width=1920",
@@ -340,7 +366,8 @@
   {
     "id": 27,
     "category": "soul",
-    "name": "된장찌개 | Soybean Paste Stew",
+    "kr-category": "소울음식",
+    "name": "된장찌개 | Doenjang Jjigae",
     "tagline": "된장으로 끓인 한국 찌개",
     "list_image_url": "https://foodrecipe.co.kr/wp-content/uploads/2025/07/tomato-doenjang3.jpg",
     "detail_image_url": "https://static.wtable.co.kr/image/production/service/curation/1098/7e708e6c-166f-44c6-81b8-4a6866e71a8b.jpg",
@@ -353,7 +380,8 @@
   {
     "id": 28,
     "category": "K-BBQ",
-    "name": "떡갈비 | Grilled Short Rib Patties",
+    "kr-category": "K-BBQ",
+    "name": "떡갈비 | Tteokgalbi",
     "tagline": "다진 고기를 양념해 구운 요리",
     "list_image_url": "https://cdn.shopify.com/s/files/1/1358/5943/files/5_0a47c26e-5cf7-41da-94c0-b4293b66a7ab.jpg?v=1740782525",
     "detail_image_url": "https://cdn.shopify.com/s/files/1/1358/5943/files/5_0a47c26e-5cf7-41da-94c0-b4293b66a7ab.jpg?v=1740782525",
@@ -366,7 +394,8 @@
   {
     "id": 29,
     "category": "K-BBQ",
-    "name": "언양불고기 | Eonyang-style Bulgogi",
+    "kr-category": "K-BBQ",
+    "name": "언양불고기 | Eonyang Bulgogi",
     "tagline": "다진 소고기를 넓게 구운 불고기",
     "list_image_url": "https://mblogthumb-phinf.pstatic.net/MjAyNDA1MTNfMTMx/MDAxNzE1NTk5MzM4NzU3.VWkH79nwNwVyhsFx6Xn4gbZP7XxCqzYpEPYPY-ur3nsg.PV1xXh2J1f7VjmT-QaJD6K3pU8epx4kShrrEz5znZw8g.JPEG/20240505%EF%BC%BF111420.jpg?type=w800",
     "detail_image_url": "https://mblogthumb-phinf.pstatic.net/MjAyNDA1MTNfMTMx/MDAxNzE1NTk5MzM4NzU3.VWkH79nwNwVyhsFx6Xn4gbZP7XxCqzYpEPYPY-ur3nsg.PV1xXh2J1f7VjmT-QaJD6K3pU8epx4kShrrEz5znZw8g.JPEG/20240505%EF%BC%BF111420.jpg?type=w800",
@@ -379,7 +408,8 @@
   {
     "id": 30,
     "category": "K-BBQ",
-    "name": "제육볶음 | Spicy Stir-fried Pork",
+    "kr-category": "K-BBQ",
+    "name": "제육볶음 | Jeyuk Bokkeum",
     "tagline": "매콤한 돼지고기 볶음",
     "list_image_url": "https://easymenu.kr/uploads/magazin_cover/je.png",
     "detail_image_url": "https://image.wiselycompany.co.kr/prod/products/3221/1X1_5f2b0c4f.webp?w=1500&q=90&f=webp",
@@ -392,6 +422,7 @@
   {
     "id": 31,
     "category": "street",
+    "kr-category": "길거리음식",
     "name": "김밥 | Gimbap",
     "tagline": "김에 밥과 재료를 말아 만든 음식",
     "list_image_url": "https://dimg.donga.com/wps/NEWS/IMAGE/2024/05/02/124762660.8.jpg",
@@ -405,7 +436,8 @@
   {
     "id": 32,
     "category": "street",
-    "name": "호떡 | Sweet Korean Pancakes",
+    "kr-category": "길거리음식",
+    "name": "호떡 | Hotteok",
     "tagline": "달콤한 설탕 소가 들어간 간식",
     "list_image_url": "https://image.kmib.co.kr/online_image/2025/0311/2025031108172473361_1741648644_0027847836.jpg",
     "detail_image_url": "https://image.8dogam.com/resized/product/asset/v1/upload/c643b8cc3680498f8e7b1d83c6ce8350.jpeg?type=big&res=3x&ext=jpg",
@@ -418,7 +450,8 @@
   {
     "id": 33,
     "category": "street",
-    "name": "붕어빵 | Fish-shaped Bread",
+    "kr-category": "길거리음식",
+    "name": "붕어빵 | Bungeoppang",
     "tagline": "붕어 모양 팥 간식",
     "list_image_url": "https://i.ytimg.com/vi/O2EJmma1sXE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgUyguMA8=&rs=AOn4CLCxrQgoWhhbBLHIJf7VWvOqoqao7Q",
     "detail_image_url": "https://image.8dogam.com/resized/product/asset/v1/upload/2ec37f71ad1e40a58492b72ba296e92c.jpg?type=big&res=3x&ext=jpg",

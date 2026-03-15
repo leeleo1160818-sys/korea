@@ -1,4 +1,5 @@
-const API_URL = "https://69a843a637caab4b8c6138b7.mockapi.io/api/v1/test";
+/* const DATA_PATH = "https://69a843a637caab4b8c6138b7.mockapi.io/api/v1/test"; */
+const API_URL = "./data/foods.json";
 
 let $grid;
 let limit = 9;

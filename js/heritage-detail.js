@@ -1,10 +1,9 @@
-const API_URL = "https://69a843a637caab4b8c6138b7.mockapi.io/api/v1/heri";
-/* const API_URL = "./data/heritage.json"; */
-
-/* URL id 가져오기 */
+/* const API_URL = "https://69a843a637caab4b8c6138b7.mockapi.io/api/v1/heri"; */
+const API_URL = "./data/heritage.json";
 
 const params = new URLSearchParams(location.search);
 const id = params.get("id");
+
 fetch(API_URL)
   .then(res => res.json())
   .then(data => {
@@ -12,7 +11,7 @@ fetch(API_URL)
 
     if (!item) return;
 
-    document.getElementById("detail-image").src = item.detail_image_url;
+    document.getElementById("detail-category").textContent = item["kr-category"];
     document.getElementById("detail-name").textContent = item.name;
     document.getElementById("detail-tagline").textContent = item.tagline;
     document.getElementById("detail-intro").textContent = item.intro;
@@ -23,8 +22,14 @@ fetch(API_URL)
     document.getElementById("g4").src = item.gallery_4;
 
     const exp = document.getElementById("experience");
+    exp.innerHTML = "";
 
-    const list = [item.experience_1, item.experience_2, item.experience_3, item.experience_4];
+    const list = [
+      item.experience_1,
+      item.experience_2,
+      item.experience_3,
+      item.experience_4
+    ];
 
     list.forEach(v => {
       if (v) {
@@ -35,7 +40,8 @@ fetch(API_URL)
     });
 
     document.getElementById("location").textContent = item.location;
-  });
+  })
+  .catch(err => console.error(err));
 
 $(".return").click(function () {
   location.href = "heritage-index.html";

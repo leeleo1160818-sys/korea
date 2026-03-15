@@ -145,6 +145,10 @@ header {
   transition: height 0.4s ease-in-out;
 }
 
+header .inner {
+  width: 1720px;
+}
+
 header.on {
   height: 320px;
 }
