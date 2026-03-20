@@ -226,7 +226,6 @@
 .map-label:hover {
     background-color: #a33232;
     color: #fff;
-    transform: translateY(-5px);
 }
 
 /* 📍 여기서부터 조각별 위치 조정 */
