@@ -4,22 +4,21 @@
 /* 2. 중앙 Discover Korea 섹션 */
 .hero {
     text-align: center;
-    margin-top: 70px;
+    padding-top: 340px;
 }
 
 .hero h1 {
     font-size: 60px;
     font-weight: 700;
-    margin-top: 180px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 24px;
     color: #2c2c2cc5;
     line-height: 1.8;
-    margin-bottom: -300px;
+    
 }
 
 /* 중앙 배경 이미지 박스 */
@@ -55,7 +54,7 @@
 }
 
 .korea-title-group h2 {
-    font-size: 38px;
+    font-size: 58px;
     font-weight: 700;
     margin-right: 30px;
     white-space: nowrap;
@@ -80,7 +79,7 @@
 
 /* 정보 박스 안의 3열 그리드 */
 .data-grid {
-    font-size: 16px;
+    font-size: 21px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 20px;
@@ -89,7 +88,7 @@
 
 .data-item {
     display: flex;
-    font-size: 16px;
+    font-size: 21px;
     align-items: center;
 }
 
@@ -106,7 +105,7 @@
 /* 태극 마크 */
 .taeguk-mark {
     position: absolute;
-    top: 170px;
+    top: 190px;
     right: -10px;
     width: 30px;
     height: 40px;
@@ -133,11 +132,10 @@
 }
 
 .explore-title {
-    font-family: "Eulyoo1945";
-    font-size: 60px;
+    font-family: "Maruburi";
+    font-size: 42px;
     font-weight: 700;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .explore-desc {
