@@ -504,10 +504,6 @@ html {
     padding: 0;
   }
 
-  body.dark .mobile-menu {
-    color: #fff;
-  }
-
   /* mobile gnb drawer */
   .gnb {
     position: fixed;
