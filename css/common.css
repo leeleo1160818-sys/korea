@@ -101,13 +101,12 @@ body.mix {
 
 /* white */
 .color button[data-theme="light"] {
-  background: url(../img/bg.png);
+  background: url(../img/bg-white.png);
 }
 
 /* black */
 .color button[data-theme="dark"] {
   border: 1px solid #333;
-  background: url(../img/bg-black.png);
 }
 
 /* mix */
