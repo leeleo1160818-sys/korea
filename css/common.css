@@ -107,7 +107,7 @@ body.mix {
 /* black */
 .color button[data-theme="dark"] {
   border: 1px solid #333;
-  background: url(../img/bg-black02.png);
+  background: url(../img/bg-black.png);
 }
 
 /* mix */
